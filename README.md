@@ -3,7 +3,7 @@
 # SERVER
 
 
-´´´
+"""
 package main
 
 import (
@@ -17,4 +17,4 @@ func main() {
 	go repoclient.Createclientsocket("localhost", "8000", "tcp", "2")
 	<-wait
 }
-´´´
+"""
