@@ -17,7 +17,10 @@ func Createclientsocket(connHost, connPort, connType, index string) {
 		os.Exit(1)
 	}
 
-	// Stdin'den yeni okuyucu oluşturun.
+	/*
+	Stdin'den yeni okuyucu oluşturun. Terminal girdisi alan bufio
+	değiştirip otomatik bir brokerden data alma versiyonu ile güncelleyebilirsiniz.
+	*/
 	reader := bufio.NewReader(os.Stdin)
 
 	// çıkışa kadar döngüyü sonsuza kadar çalıştırın.
